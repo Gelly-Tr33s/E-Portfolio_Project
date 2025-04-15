@@ -1,0 +1,158 @@
+/*navbar settings*/
+.custom-navbar {
+    background-color: rgba(13, 40, 24,0.6);
+    padding: 10px; 
+}
+.navbar-nav .nav-link {
+    font-size: 20px; 
+}
+
+header h1 {
+    margin-bottom: 0; 
+}
+header p {
+    margin-top: 0; 
+    margin-bottom: -40px;
+}
+
+/* Animated text in hero page */
+#typed-text {
+    font-weight: bold;
+    color: #16DB65;
+    border-right: 3px solid white; 
+    padding-right: 5px;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+/* Settings for the whole webpage*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: poppins,sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-image: url('images/Green_bg.png');
+    background-size: cover; /* Makes the image fit the entire screen */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    background-repeat: no-repeat; /* Prevents repeating */
+}
+
+.body {
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    padding: 30px;
+    border-radius: 0px;
+    color: white;
+}
+
+/*Home page*/
+.hero-pic{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 15px solid #0D2818;
+    box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
+    display: flex;          /* Allows centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+    max-width: 100%;        /* Prevent overflow */
+    margin: auto;         /* Centering the div */
+}
+
+.hero-pic img{
+    width: 100%;            /* Responsive image */
+    max-width: 500px;       /* Limits size */
+    border-radius: 10px;    
+}
+
+.hero-pic img:hover{
+    transform: scale(1.2);
+}
+
+.row.align-items-center {
+    display: flex;
+    align-items: center; /* Ensures text and image align vertically */
+}
+
+/*Midterms page*/
+.images img{
+    display: flex;          /* Allows centering */
+    margin: auto;         /* Centering the div */
+}
+
+
+/*Contact page*/
+.card {
+    width: 25rem;
+    color: white;
+    background-color: transparent;
+    border: 5px solid #16DB65;
+}
+
+button {
+    width: 10rem;
+    background-color: transparent;
+}
+
+
+
+/* Connect with mes (FOOTER) */
+.social a {
+    font-size: 24px;
+    margin: 0 10px;
+    color: white;
+    transition: 0.3s;
+}
+
+.footer p {
+    font-size: 18px;
+    color: aliceblue;
+}
+.social a:hover {
+    color: #16DB65; /* Changes color on hover */
+}
+
+
+/* Links */
+.body a:link, a:visited {
+    color: #16DB65;
+  }
+  
+.container a:hover, a:active {
+    color: #257545;
+  }
+
+
+
+/* Collapsible Contents */
+.collapsible {
+    background-color: #0D2818;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.collapsible.active {
+    background-color: #257545;
+}
+
+.content {
+    overflow: auto;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+    background-color: rgba(13, 40, 24,0.6);
+    padding: 0 15px;
+}
